@@ -5,7 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maquette Client Test</title>
+    <script
+      src="https://kit.fontawesome.com/f4d122f5f5.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="/css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header__container">
+      <div class="header__first">
+        <img src="./images/logo/Booki@3x.png" alt="logo" class="header__logo" />
+        <nav class="header__nav">
+          <a href="#" class="header__link" target="_blank">Hebergements</a>
+          <a href="#" class="header__link" target="_blank">Activités</a>
+        </nav>
+      </div>
+      <div class="header__titles">
+        <h1 class="header__mainTitle">
+          Trouver votre hébergement pour des vacances de rêve
+        </h1>
+        <h2 class="header__subTitle">
+          En plein centre ville où en pleine nature
+        </h2>
+      </div>
+      <div id="search">
+        <i class="fa-solid fa-location-dot"></i>
+        <div class="header__search">
+          <form action="#" class="header__form">
+            <label for="input">
+              <input
+                type="text"
+                id="input"
+                name="recherche"
+                value="Marseille, France"
+                class="header__input"
+              />
+            </label>
+          </form>
+          <button class="header__SearchButton">Rechercher</button>
+        </div>
+      </div>
+      <div class="header__filters">
+        <p>Filtres</p>
+        <div class="filter__Block">
+          <div class="header__iconesFilter">
+            <i class="fa-solid fa-sack-dollar"></i>
+          </div>
+          <button class="filter__btn">Economique</button>
+        </div>
+
+        <div class="filter__Block">
+          <div class="header__iconesFilter">
+            <i class="fa-solid fa-universal-access"></i>
+          </div>
+          <button class="filter__btn">Familial</button>
+        </div>
+
+        <div class="filter__Block">
+          <div class="header__iconesFilter">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <button class="filter__btn">Romantique</button>
+        </div>
+
+        <div class="filter__Block">
+          <div class="header__iconesFilter">
+            <i class="fa-solid fa-dog"></i>
+          </div>
+          <button class="filter__btn">Animaux autorisés</button>
+        </div>
+      </div>
+      <div class="header__info">
+        <i class="fa-solid fa-info"></i>
+        <p class="header__infoText">
+          Plus de 500 logements sont disponibles dans cette ville
+        </p>
+      </div>
+    </header>
+  </body>
 </html>
