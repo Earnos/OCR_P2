@@ -1,6 +1,24 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("fonts/Raleway-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("fonts/Raleway-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+html {
+  --PrimaryColor: #0065fc;
+  --SecondaryColor: #deebff;
+  --BackgroundColor: #f2f2f2;
+}
+
 *,
 html {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  width: 100%;
 }

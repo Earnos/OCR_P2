@@ -1,1 +1,4 @@
 images/*
+*.json
+*.zip
+*.ttf
