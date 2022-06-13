@@ -215,7 +215,6 @@ body {
   flex-direction: column;
   max-width: 330px;
   max-height: 240px;
-  border: 1px solid var(--mainGrey);
   border-radius: 15px;
   padding: 5px;
   margin: 10px 0;
@@ -264,7 +263,6 @@ body {
   max-width: 840px;
   width: 30%;
   height: auto;
-  border: 2px solid var(--mainGrey);
 }
 
 .main__section1,
@@ -286,9 +284,40 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
-/*CARD Populaires*/
+/*CARDS aside*/
+.aside__cardBlock {
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+}
+
+.aside__card {
+  display: flex;
+  max-width: 750px;
+  max-height: 150px;
+  border: 15px;
+}
+
+.aside__card > img {
+  object-fit: cover;
+  height: auto;
+  width: 25%;
+  border-radius: 15px 0 0 15px;
+  overflow: hidden;
+}
+
+.aside__cardInfos {
+}
+
+.aside_infoText {
+}
+
+.aside__cardStars {
+  color: var(--PrimaryColor);
+}
 
 /* Responsive */
 
