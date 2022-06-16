@@ -351,33 +351,123 @@ body {
 
 .section2__cardBlock {
   display: flex;
-  height: 500px;
+  height: 550px;
+  width: 100%;
+  column-gap: 2%;
 }
 
-.section2__card {
-  flex: 1;
-  max-width: 22%;
-  height: auto;
-  margin-right: 10px;
+.section2__cardOne {
+  width: 100%;
+  height: 100%;
   border-radius: 15px;
   -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.31);
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.31);
   transition: transform 300ms;
 }
 
-.section2__card:hover {
-  transform: scale(1.05);
-}
-
-.section2__card > img {
+.section2__cardOne > img {
   width: 100%;
-  height: 90%;
+  height: 89%;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
 
+.section2__cardOne:hover,
+.cardB1:hover,
+.cardB2:hover,
+.cardD1:hover,
+.cardD2:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
 .section2__cardTitle {
   margin: 10px 15px;
+}
+
+/*Column propriétées générales*/
+
+.section2__columnB,
+.section2__columnD {
+  display: flex;
+  flex-direction: column;
+  row-gap: 7%;
+}
+
+.section2__columnA,
+.section2__columnB,
+.section2__columnC,
+.section2__columnD {
+  flex: 1;
+}
+
+/*Column B*/
+
+.cardB1 {
+  height: 56.5%;
+  width: 100%;
+  border-radius: 15px;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.31);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.31);
+  transition: transform 300ms;
+}
+
+.cardB1 .img1 {
+  height: 80%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.cardB2 {
+  height: 36.5%;
+  width: 100%;
+  border-radius: 15px;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.31);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.31);
+  transition: transform 300ms;
+}
+
+.cardB2 .img2 {
+  height: 70%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+/*Column D*/
+
+.cardD1 {
+  height: 36.5%;
+  width: 100%;
+  border-radius: 15px;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.31);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.31);
+  transition: transform 300ms;
+}
+
+.cardD1 .img3 {
+  height: 70%;
+  width: 100%;
+  object-position: top;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.cardD2 {
+  height: 56.5%;
+  width: 100%;
+  border-radius: 15px;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.31);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.31);
+  transition: transform 300ms;
+}
+
+.cardD2 .img4 {
+  height: 80%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
 }
 
 /*Footer*/
