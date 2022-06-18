@@ -14,7 +14,13 @@
   <body>
     <header class="header__container">
       <div class="header__first">
-        <img src="./images/logo/Booki@3x.png" alt="logo" class="header__logo" />
+        <img
+          srcset="./images/logo/Booki.png 191w, ./images/logo/Booki@3x.png 285w"
+          sizes="(max-width: 768px) 120px"
+          src="./images/logo/Booki@3x.png"
+          alt="logo Booki"
+          class="header__logo"
+        />
         <nav class="header__nav">
           <a href="#hebergement" class="header__link">Hebergements</a>
           <a href="#activitees" class="header__link">Activités</a>
@@ -44,7 +50,7 @@
           </form>
           <button class="header__SearchButton">
             <span>Rechercher</span>
-            <img src="/images/icones/search.svg" alt="" class="img__loop" />
+            <i class="fa-solid fa-magnifying-glass"></i>
           </button>
         </div>
       </div>
@@ -87,12 +93,19 @@
     </header>
     <main class="main__container">
       <section class="main__section1">
-        <h1 class="section__title" id="hebergement">Hébergements à Marseille</h1>
+        <h2 class="section__title" id="hebergement">
+          Hébergements à Marseille
+        </h2>
         <div class="card__block">
           <div class="section1__card">
             <img
-              src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-              alt=""
+              srcset="
+                ./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg  1x,
+                ./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg 2x,
+                ./images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg  3x
+              "
+              src="./images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+              alt="Auberge la Cannebière"
             />
             <div class="card__infos">
               <h3 class="card__title">Auberge la cannebière</h3>
@@ -109,8 +122,13 @@
 
           <div class="section1__card">
             <img
-              src="./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
-              alt=""
+              srcset="
+                ./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg  1x,
+                ./images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg  2x,
+                ./images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg 3x
+              "
+              src="./images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+              alt="Hôtel du port"
             />
             <div class="card__infos">
               <h3 class="card__title">Hôtel du port</h3>
@@ -126,8 +144,13 @@
           </div>
           <div class="section1__card">
             <img
-              src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
-              alt=""
+              srcset="
+                ./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg  1x,
+                ./images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg 2x,
+                ./images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg  3x
+              "
+              src="./images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+              alt="Hôtel les mouettes"
             />
             <div class="card__infos">
               <h3 class="card__title">Hôtel Les mouettes</h3>
@@ -143,8 +166,13 @@
           </div>
           <div class="section1__card">
             <img
-              src="./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
-              alt=""
+              srcset="
+                ./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg  1x,
+                ./images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg 2x,
+                ./images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg  3x
+              "
+              src="./images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+              alt="Hôtel de mer"
             />
             <div class="card__infos">
               <h3 class="card__title">Hôtel de mer</h3>
@@ -160,8 +188,13 @@
           </div>
           <div class="section1__card">
             <img
-              src="./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
-              alt=""
+              srcset="
+                ./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg  1x,
+                ./images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 2x,
+                ./images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg  3x
+              "
+              src="./images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+              alt="Auberge Le Panier"
             />
             <div class="card__infos">
               <h3 class="card__title">Auberge Le Panier</h3>
@@ -177,8 +210,13 @@
           </div>
           <div class="section1__card">
             <img
-              src="./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
-              alt=""
+              srcset="
+                ./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg  1x,
+                ./images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 2x,
+                ./images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg  3x
+              "
+              src="./images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+              alt="Hôtel chez Amina"
             />
             <div class="card__infos">
               <h3 class="card__title">Hôtel chez Amina</h3>
@@ -197,13 +235,18 @@
       </section>
       <aside class="main__aside">
         <div class="aside__titleBlock">
-          <h1 class="aside__title">Les plus populaires</h1>
+          <h2 class="aside__title">Les plus populaires</h2>
           <i class="fa-solid fa-star"></i>
         </div>
         <div class="aside__cardBlock">
           <div class="aside__card">
             <img
-              src="/images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+              srcset="
+                /images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg  1x,
+                /images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 2x,
+                /images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg  3x
+              "
+              src="/images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
               alt="hôtel soleil du matin"
             />
             <div class="aside__cardInfos">
@@ -220,11 +263,18 @@
           </div>
           <div class="aside__card">
             <img
-              src="/images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg"
+              srcset="
+                /images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg  1x,
+                /images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg 2x,
+                /images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg  3x
+              "
+              src="/images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg"
               alt="Au coeur de l'eau chambre d'hôtes"
             />
             <div class="aside__cardInfos">
-              <h3 class="aside__cardTitle">Au coeur de l'eau chambre d'hôtes</h3>
+              <h3 class="aside__cardTitle">
+                Au coeur de l'eau chambre d'hôtes
+              </h3>
               <p class="aside__infoText">Nuit à partir de 71€</p>
               <div class="aside__cardStars">
                 <i class="fa-solid fa-star"></i>
@@ -237,7 +287,12 @@
           </div>
           <div class="aside__card">
             <img
-              src="/images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+              srcset="
+                /images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg  1x,
+                /images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg 2x,
+                /images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg  3x
+              "
+              src="/images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
               alt="hôtel soleil du matin"
             />
             <div class="aside__cardInfos">
@@ -252,43 +307,98 @@
               </div>
             </div>
           </div>
-          </div>
         </div>
       </aside>
     </main>
     <div class="main__container2">
       <section class="main__section2">
-        <h1 class="section2__title" id="activitees">Activitées à Marseille</h1>
+        <h2 class="section2__title" id="activitees">Activitées à Marseille</h2>
         <div class="section2__cardBlock">
           <div class="section2__columnA">
             <div class="section2__cardOne">
-              <img src="/images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Le vieux Port">
+              <img
+                srcset="
+                  /images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg  1x,
+                  /images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 2x,
+                  /images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg  3x
+                "
+                src="/images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                alt="Le vieux Port"
+              />
               <div><h3 class="section2__cardTitle">Vieux Port</h3></div>
             </div>
           </div>
           <div class="section2__columnB">
             <div class="cardB1">
-                <img class="img1" src="/images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Promègues">
-                <div><h3 class="section2__cardTitle">Fort de Promègues</h3></div>
+              <img
+                class="img1"
+                srcset="
+                  /images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg  1x,
+                  /images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg 2x,
+                  /images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg  3x
+                "
+                src="/images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                alt="Fort de Promègues"
+              />
+              <div><h3 class="section2__cardTitle">Fort de Promègues</h3></div>
             </div>
-            <div class=" cardB2">
-                <img class="img2" src="/images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles de Frioule">
-                <div><h3 class="section2__cardTitle">Iles du Frioul</h3></div>
+            <div class="cardB2">
+              <img
+                class="img2"
+                srcset="
+                  /images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg  1x,
+                  /images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 2x,
+                  /images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg  3x
+                "
+                src="/images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                alt="Iles de Frioule"
+              />
+              <div><h3 class="section2__cardTitle">Iles du Frioul</h3></div>
             </div>
           </div>
           <div class="section2__columnC">
             <div class="section2__cardOne">
-              <img src="/images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
-              <div><h3 class="section2__cardTitle">Parc National des Calanques</h3></div>
+              <img
+                srcset="
+                  /images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg  1x,
+                  /images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 2x,
+                  /images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg  3x
+                "
+                src="/images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                alt="Parc National des Calanques"
+              />
+              <div>
+                <h3 class="section2__cardTitle">Parc National des Calanques</h3>
+              </div>
             </div>
           </div>
           <div class="section2__columnD">
             <div class="cardD1">
-              <img class="img3" src="/images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dâme-de-la-Garde">
-              <div><h3 class="section2__cardTitle">Notre-Dâme-de-la-Garde</h3></div>
+              <img
+                class="img3"
+                srcset="
+                  /images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg  1x,
+                  /images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg 2x,
+                  /images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg  3x
+                "
+                src="/images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                alt="Notre-Dâme-de-la-Garde"
+              />
+              <div>
+                <h3 class="section2__cardTitle">Notre-Dâme-de-la-Garde</h3>
+              </div>
             </div>
             <div class="cardD2">
-              <img class="img4" src="/images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
+              <img
+                class="img4"
+                srcset="
+                  /images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg  1x,
+                  /images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg 2x,
+                  /images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg  3x
+                "
+                src="/images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                alt="Parc Longchamp"
+              />
               <div><h3 class="section2__cardTitle">Parc Longchamp</h3></div>
             </div>
           </div>
@@ -301,8 +411,12 @@
           <h3>À propos</h3>
           <ul class="footer__list">
             <li><a href="#" class="footer__link">Fontionnement du site</a></li>
-            <li><a href="#" class="footer__link">Conditions gégérales de vente</a></li>
-            <li><a href="#" class="footer__link">Données et confidentialitées</a></li>
+            <li>
+              <a href="#" class="footer__link">Conditions gégérales de vente</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Données et confidentialitées</a>
+            </li>
           </ul>
         </section>
         <section class="footer__section">
