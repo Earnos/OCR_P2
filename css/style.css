@@ -53,7 +53,8 @@ body {
   display: flex;
 }
 
-.header__link:hover {
+.header__link:hover,
+#header__linkblue {
   color: var(--PrimaryColor);
   border-top: 2px solid var(--PrimaryColor);
 }
@@ -64,13 +65,13 @@ body {
   margin: 45px 0 0 60px;
 }
 
-.header__mainTitle {
+.header__maintitle {
   font-size: 25px;
   font-weight: 700;
   margin-bottom: 5px;
 }
 
-.header__subTitle {
+.header__subtitle {
   font-size: 15px;
   font-weight: 400;
 }
@@ -100,8 +101,8 @@ body {
   outline: 1px solid var(--textColor);
 }
 
-.header__SearchButton,
-.header__SearchButton > span {
+.header__searchbutton,
+.header__searchbutton > span {
   border: none;
   border-radius: 0 10px 10px 0;
   color: var(--SecondaryColor);
@@ -144,7 +145,7 @@ body {
 
 /*  Block : Icones + button*/
 
-.filter__Block {
+.filter__block {
   display: flex;
   align-items: center;
   border: 1px solid var(--mainGrey);
@@ -153,7 +154,7 @@ body {
   transition: all 0.3s;
 }
 
-.filter__Block:hover {
+.filter__block:hover {
   transform: scale(1.2);
 }
 
@@ -198,7 +199,7 @@ body {
 }
 /*Main section1*/
 
-.main__container {
+.main__hebergement {
   display: flex;
   justify-content: space-evenly;
   border-radius: 20px;
@@ -216,6 +217,7 @@ body {
 
 .section1__text {
   margin-top: 20px;
+  padding-left: 15px;
   cursor: pointer;
 }
 
@@ -284,7 +286,7 @@ body {
   background-color: var(--mainGrey);
 }
 
-.aside__titleBlock {
+.aside__titleblock {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -292,7 +294,7 @@ body {
 }
 
 /*CARDS aside*/
-.aside__cardBlock {
+.aside__cardblock {
   display: flex;
   flex-direction: column;
   padding: 4px;
@@ -324,22 +326,22 @@ body {
   overflow: hidden;
 }
 
-.aside__cardTitle {
+.aside__cardtitle {
   margin-bottom: 8px;
 }
 
-.aside__cardInfos {
+.aside__cardinfos {
   padding: 3% 0 0 3%;
   width: 68%;
 }
 
-.aside__cardStars {
+.aside__cardstars {
   color: var(--PrimaryColor);
   margin-top: 2em;
 }
 /* Section 2*/
 
-.main__container2 {
+.main__activitees {
   margin: 3.5%;
 }
 
@@ -349,7 +351,7 @@ body {
 
 /*CARDS Section2 */
 
-.section2__cardBlock {
+.section2__cardblock {
   display: flex;
   height: 550px;
   width: 100%;
@@ -361,7 +363,7 @@ body {
   color: #000000;
 }
 
-.section2__cardOne {
+.section2__cardone {
   width: 100%;
   height: 100%;
   border-radius: 15px;
@@ -369,14 +371,14 @@ body {
   transition: transform 300ms;
 }
 
-.section2__cardOne > img {
+.section2__cardone > img {
   width: 100%;
   height: 89%;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
 
-.section2__cardOne:hover,
+.section2__cardone:hover,
 .cardB1:hover,
 .cardB2:hover,
 .cardD1:hover,
@@ -384,7 +386,7 @@ body {
   transform: scale(1.05);
 }
 
-.section2__cardTitle {
+.section2__cardtitle {
   margin: 10px 15px;
 }
 
@@ -563,8 +565,8 @@ body {
     margin: 25px 0 0 35px;
   }
 
-  .header__mainTitle,
-  .header__subTitle,
+  .header__maintitle,
+  .header__subtitle,
   .header__filters,
   .header__info,
   #search {
@@ -586,7 +588,7 @@ body {
   }
   /*Main*/
 
-  .main__container {
+  .main__hebergement {
     flex-direction: column-reverse;
   }
 
@@ -612,7 +614,7 @@ body {
     margin-right: 10px;
   }
 
-  .aside__cardBlock {
+  .aside__cardblock {
     width: 60%;
   }
 
@@ -621,7 +623,7 @@ body {
     background: var(--backgroundColor);
   }
 
-  .section2__cardTitle {
+  .section2__cardtitle {
     font-size: 16px;
     font-weight: 700;
   }
@@ -637,13 +639,18 @@ body {
     margin: 0;
   }
 
+  #header__linkblue {
+    border-top: none;
+    color: black;
+  }
+
   .header__titles {
     margin-left: 0;
   }
 
-  .header__mainTitle,
+  .header__maintitle,
   .header__info,
-  .header__subTitle {
+  .header__subtitle {
     margin: 20px;
     text-align: center;
   }
@@ -660,6 +667,7 @@ body {
     font-size: 1.2em;
     font-weight: 500;
     border-bottom: thick solid var(--mainGrey);
+    border-top: none;
   }
 
   .header__nav {
@@ -668,19 +676,20 @@ body {
     justify-content: center;
   }
 
-  .filter__Block {
+  .filter__block {
     margin: 8px 17px;
   }
 
   .header__link:focus {
     border-top: none;
     border-bottom: 2px solid var(--PrimaryColor);
+    color: var(--PrimaryColor);
   }
 
   .header__link:hover {
     border-top: none;
     border-bottom: thick solid var(--PrimaryColor);
-    color: var(--PrimaryColor);
+    color: var(--PrimaryColor) !important;
   }
 
   #search {
@@ -706,16 +715,16 @@ body {
     padding: 5px 5px;
   }
 
-  .header__infoText {
+  .header__infotext {
     text-align: center;
   }
 
-  .header__SearchButton {
+  .header__searchbutton {
     border-radius: 15px;
     transform: translateX(-10px);
   }
 
-  .header__SearchButton > span {
+  .header__searchbutton > span {
     display: none;
   }
 
@@ -725,7 +734,7 @@ body {
 
   /*Main*/
 
-  .main__container {
+  .main__hebergement {
     flex-direction: column-reverse;
   }
 
@@ -748,13 +757,13 @@ body {
     text-align: center;
   }
 
-  .aside__cardTitle,
+  .aside__cardtitle,
   .card__title {
     font-size: 16px;
     font-weight: 700;
   }
 
-  .aside__infoText,
+  .aside__infotext,
   .card__text {
     font-size: 12px;
   }
@@ -764,25 +773,25 @@ body {
     height: 150px;
   }
 
-  .aside__cardInfos {
+  .aside__cardinfos {
     width: 60%;
   }
 
   /*responsive section 2 cards*/
-  .section2__cardBlock {
+  .section2__cardblock {
     display: block;
     height: auto;
   }
 
   .cardB1 .img1,
   .cardB2 .img2,
-  .section2__cardOne > img,
+  .section2__cardone > img,
   .cardD1 .img3,
   .cardD2 .img4 {
     height: 250px;
   }
 
-  .section2__cardOne,
+  .section2__cardone,
   .cardB1,
   .cardB2,
   .cardD1,
@@ -790,7 +799,7 @@ body {
     margin-bottom: 20px;
   }
 
-  .section2__cardTitle {
+  .section2__cardtitle {
     margin: 0 0 0 10px;
     padding: 15px 10px;
     font-size: 16px;
